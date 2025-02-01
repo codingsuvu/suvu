@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing Tool with Ads</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Canvas Drawing Tool</h1>
+  </header>
+
+  <main>
+    <!-- Toolbar -->
+    <div class="canvas-container">
+      <label for="toolSelect">Select Tool:</label>
+      <select id="toolSelect">
+        <option value="pencil">Pencil</option> 
+        <option value="brush">brush</option>
+        <option value="marker">Marker</option>
+        <option value="paintbrush">PaintBrush</option>
+      </select>
+
+      <label for="colorPicker">Select Color:</label>
+      <input type="color" id="colorPicker" value="#000000">
+
+      <button onclick="clearCanvas()">Clear Canvas</button>
+
+    <!-- Canvas Drawing Area -->
+    
+      <canvas id="drawingCanvas" width="1000" height="500"></canvas>
+    </div>
+
+    <!-- Ad Container -->
+     <section>
+    <div class="ad-container">
+      <p>Advertisement</p>
+      <div id="adPlaceholder">
+        <!-- Ad will be embedded here -->
+      </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p> © suvu-coder </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
